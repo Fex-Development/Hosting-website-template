@@ -6,9 +6,55 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+body {
+    background-color: #111;
+    color: #fff;
+}
+
+a {
+    color: crimson;
+}
+
 html{
     scroll-behavior: smooth;
 }
+
+/* Dark mode specific styles */
+html[data-theme='dark'] {
+    background-color: #111;
+    color: #fff;
+}
+
+html[data-theme='dark'] a {
+    color: crimson;
+}
+.skills .skills-content .column.left .feature-box {
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    text-align: center; /* Center align the text */
+    cursor: pointer; /* Add cursor pointer on hover */
+}
+
+.skills .skills-content .column.left .feature-box:hover {
+    background: #fff;
+    border-color: #fff;
+    color: crimson;
+}
+
+/* Colorful feature boxes */
+.skills .skills-content .column.left .feature-box:nth-child(odd) {
+    background: #FF6B6B; /* Red */
+    color: #fff;
+}
+
+.skills .skills-content .column.left .feature-box:nth-child(even) {
+    background: #74B9FF; /* Blue */
+    color: #fff;
+}
+
 
 /* custom scroll bar */
 ::-webkit-scrollbar {
