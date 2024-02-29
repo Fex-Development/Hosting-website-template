@@ -33,20 +33,24 @@ $(document).ready(function(){
         $('.menu-btn i').toggleClass("active");
     });
 
-    // typing text animation script
-    var typed = new Typed(".typing", {
-        strings: ["Minecraft Servers" , "Minecraft Websites For Server" , "Discord Bot" , "Minecraft Plugins" , "Minecraft Maps" , "And Many More"],
-        typeSpeed: 30,
-        backSpeed: 20,
-        loop: true
-    });
+    if ($('.typing').length) {
+        // typing text animation script
+        var typed = new Typed(".typing", {
+            strings: ["Minecraft Servers" , "Minecraft Websites For Server" , "Discord Bot" , "Minecraft Plugins" , "Minecraft Maps" , "And Many More"],
+            typeSpeed: 30,
+            backSpeed: 20,
+            loop: true
+        });
+    }
 
-    var typed = new Typed(".typing-2", {
-        strings: ["Minecraft Servers" , "Minecraft Websites For Server" , "Discord Bot" , "Minecraft Plugins" , "Minecraft Maps" , "And Many More"],
-        typeSpeed: 30,
-        backSpeed: 20,
-        loop: true
-    });
+    if ($('.typing-2').length) {
+        var typed = new Typed(".typing-2", {
+            strings: ["Minecraft Servers" , "Minecraft Websites For Server" , "Discord Bot" , "Minecraft Plugins" , "Minecraft Maps" , "And Many More"],
+            typeSpeed: 30,
+            backSpeed: 20,
+            loop: true
+        });
+    }
 
     // owl carousel script
     $('.carousel').owlCarousel({
